@@ -118,6 +118,35 @@ namespace SIngly_Linked_List
     {
         static void Main(string[] args)
         {
+            list obj = new list();
+            while(true)
+            {
+                try
+                {
+                    Console.WriteLine("\nMenu");
+                    Console.WriteLine("1. Add a record to the list");
+                    Console.WriteLine("2. Delete a Record from the list");
+                    Console.WriteLine("3. View all the record  in the list");
+                    Console.WriteLine("4. Search for a record in the list");
+                    Console.WriteLine("5. Exit");
+                    Console.Write("\n enter your choice (1-5) : ");
+                    char ch = Convert.ToChar(Console.ReadLine());
+
+                    switch(ch)
+                    {
+                        case '1':
+                            {
+                                obj.addnote
+                            }
+                            break;
+
+                        case '2':
+                            {
+                                if(obj.)
+                            }
+                    }
+                }
+            }
         }
     }
 }
