@@ -55,9 +55,18 @@ namespace SIngly_Linked_List
                     Console.WriteLine();
                     return;
                 }
+                previous.next = current;
+                previous.next = newnode;
             }
             previous.next = current;
             previous.next = newnode;
+        }
+
+        public bool delNode(int rollno)
+        {
+            node previous, current;
+            previous = current = null;
+
         }
         
         
