@@ -30,6 +30,8 @@ namespace SIngly_Linked_List
             Console.Write("\nEnter the roll number of the student: ");
             nm = Console.ReadLine();
             node newnode = new node();
+            newnode.rollNumber = rollNo;
+            newnode.name = nm;
         }
         
         
