@@ -32,6 +32,17 @@ namespace SIngly_Linked_List
             node newnode = new node();
             newnode.rollNumber = rollNo;
             newnode.name = nm;
+            if((START == null) || (rollNo <= START.rollNumber))
+            {
+                if((START != null) && (rollNo == START.rollNumber))
+                {
+                    Console.WriteLine();
+                    return;
+                }
+                newnode.next = START;
+                START = newnode;
+                return;
+            }
         }
         
         
