@@ -89,6 +89,27 @@ namespace SIngly_Linked_List
             else
                 return true;
         }
+        public void Treverse()
+        {
+            if (listEmpty())
+                Console.WriteLine("\nThe record in the list are : ");
+            else
+            {
+                Console.WriteLine("\nThe record in the list are : ");
+                node currentNode;
+                for (currentNode = START; currentNode != null;
+                    currentNode = currentNode.next)
+                    Console.Write(currentNode.rollNumber + " "
+                        + currentNode.name + "\n");
+                Console.WriteLine();
+            }
+
+        }
+
+        public bool listEmpty()
+        {
+
+        }
     }
     class Program
     {
