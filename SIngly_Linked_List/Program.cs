@@ -140,10 +140,7 @@ namespace SIngly_Linked_List
                             }
                             break;
 
-                        case '2':
-                            {
-                                if(obj.)
-                            }
+                        
                     }
                 }
             }
