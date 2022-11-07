@@ -43,6 +43,21 @@ namespace SIngly_Linked_List
                 START = newnode;
                 return;
             }
+
+            node previous, current;
+            previous = START;
+            current = START;
+
+            if ((current != null) && (rollNo == current.rollNumber))
+            {
+                if (rollNo == current.rollNumber)
+                {
+                    Console.WriteLine();
+                    return;
+                }
+            }
+            previous.next = current;
+            previous.next = newnode;
         }
         
         
