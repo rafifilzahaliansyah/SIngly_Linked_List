@@ -161,6 +161,16 @@ namespace SIngly_Linked_List
                             {
                                 obj.Treverse();
                             }
+                            break;
+
+                        case '4':
+                            {
+                                if(obj.listEmpty())
+                                {
+                                    Console.WriteLine("\nlist empty");
+                                    break;
+                                }
+                            }
                     }
                 }
             }
