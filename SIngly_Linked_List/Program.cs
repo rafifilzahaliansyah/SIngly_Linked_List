@@ -140,7 +140,27 @@ namespace SIngly_Linked_List
                             }
                             break;
 
-                        
+                        case '2':
+                            {
+                                if (obj.listEmpty())
+                                {
+                                    Console.WriteLine("\nlist is empty");
+                                    break;
+                                }
+                                Console.WriteLine("enter the roll number of" +
+                                    "the student whose record is to be deleted : ");
+                                int rollNo = Convert.ToInt32(Console.ReadLine());
+                                Console.WriteLine();
+                                if (obj.delNode(rollNo) == false)
+                                    Console.WriteLine("record with roll number" +
+                                        +rollNo + "deleted");
+                            }
+                            break;
+
+                        case '3':
+                            {
+                                obj.Treverse();
+                            }
                     }
                 }
             }
