@@ -136,7 +136,7 @@ namespace SIngly_Linked_List
                     {
                         case '1':
                             {
-                                obj.addnote
+                                obj.addnote();
                             }
                             break;
 
@@ -170,7 +170,22 @@ namespace SIngly_Linked_List
                                     Console.WriteLine("\nlist empty");
                                     break;
                                 }
+                                node previous, current;
+                                previous = current = null;
+                                Console.Write("\nenter the roll number of the" +
+                                    "student whole record is to be searched : ");
+                                int num = Convert.ToInt32(Console.ReadLine());
+                                if (obj.search(num, ref previous, ref current) == false)
+                                    Console.WriteLine("\nRecord not found");
+                                else
+                                {
+                                    Console.WriteLine("\nrecord not found");
+                                    Console.WriteLine("\nroll number : "+ current.rollNumber);
+                                    Console.WriteLine("\nname : " + current.name);
+                                }
                             }
+                            break;
+                        case '5':
                     }
                 }
             }
